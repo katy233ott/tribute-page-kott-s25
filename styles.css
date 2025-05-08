@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Slab&display=swap");
+
+body {
+  font-family: "Roboto Slab", serif;
+  background-color: #000;
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall-2.png");
+  margin: 0;
+  padding: 0;
+  color: #1e1e1e;
+}
+
+#main {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fffaf5;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+#main:hover {
+  transform: scale(1.005);
+}
+
+#title {
+  font-family: "Anton", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #a40000;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px #eee;
+}
+
+#img-div {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  height: auto;
+  border: 6px solid #444;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+#img-caption {
+  margin-top: 0.8rem;
+  font-style: italic;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+#tribute-info {
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f7f2ee;
+  border-left: 5px solid #a40000;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+#tribute-info p {
+  margin-bottom: 1.2rem;
+}
+
+.highlight {
+  color: #a40000;
+  font-weight: bold;
+}
+
+#timeline {
+  margin-top: 3rem;
+  padding: 1.5rem;
+  background-color: #f7f2ee;
+  border-left: 5px solid #a40000;
+  border-radius: 6px;
+}
+
+#timeline h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  color: #a40000;
+  margin-bottom: 1rem;
+}
+
+#timeline ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#timeline li {
+  margin-bottom: 0.8rem;
+  font-size: 1.05rem;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+#timeline li::before {
+  content: "●";
+  color: #a40000;
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.section-divider {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, #a40000, #600000);
+  margin: 3rem 0;
+  border-radius: 3px;
+}
+
+#quote {
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  font-style: italic;
+  text-align: center;
+  color: #333;
+  padding: 1rem 2rem;
+  background-color: #f7f2ee;
+  border-left: 5px solid #a40000;
+  border-radius: 8px;
+}
+
+#quote span {
+  display: block;
+  margin-top: 0.8rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #a40000;
+}
+
+.link-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+#tribute-link {
+  display: inline-block;
+  padding: 0.85rem 1.8rem;
+  background-color: #a40000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#tribute-link:hover {
+  background-color: #7c0000;
+  transform: translateY(-2px);
+}
+
+#tribute-info p:hover {
+  background-color: #fff3e0;
+  padding-left: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#photo-gallery {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+#photo-gallery h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  color: #a40000;
+  margin-bottom: 1rem;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery-row img {
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-row img:hover {
+  transform: scale(1.05);
+}
